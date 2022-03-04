@@ -1,0 +1,28 @@
+<form [formGroup]="formInput" (submit)="simpan()">
+
+  <div class="row mb-3">
+    <label class="col-sm-2 col-form-label">ID Kategori</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" placeholder="ID Kategori" formControlName="category_id">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label class="col-sm-2 col-form-label">ID Departemen</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" placeholder="ID Departemen" formControlName="department_id">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label class="col-sm-2 col-form-label">Nama</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" placeholder="Nama" formControlName="name">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label class="col-sm-2 col-form-label">Deskripsi</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" placeholder="Deskripsi" formControlName="description">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Simpan</button>
+</form>
