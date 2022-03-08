@@ -24,6 +24,7 @@ import { InputComponent } from './input/input.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
+    ToastNoAnimationModule.for root()
   ],
   providers: [],
   bootstrap: [AppComponent]

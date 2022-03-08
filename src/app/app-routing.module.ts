@@ -17,6 +17,10 @@ const routes: Routes = [
   },
   {
     path:'input',component:InputComponent
+  },
+
+  {
+    path: 'update/:id' ,component:InputComponent
   }
 ];
 

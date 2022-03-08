@@ -16,4 +16,9 @@ export class MasterService {
   saveCategory( data: Kategori): Observable<any>{
     return this.http.post(environment.baseUrl + '/inputk', data).pipe(map(data => data))
   }
+
+  getDeptById(id: number): Observable<any>{
+    return this.http.put(environment.baseUrl+'/findById/'+id, null)
+     .pipe(map(data => data))
+  }
 }
